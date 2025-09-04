@@ -1,0 +1,43 @@
+/* Estilos personalizados para complementar o Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Fundo escuro */
+    color: #d1d5db; /* Texto claro */
+}
+.card {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #3b82f6;
+    transition: background-color 0.2s;
+}
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+.btn-secondary {
+    background-color: #4b5563;
+     transition: background-color 0.2s;
+}
+.btn-secondary:hover {
+    background-color: #374151;
+}
+.btn-danger {
+    background-color: #ef4444;
+    transition: background-color 0.2s;
+}
+.btn-danger:hover {
+    background-color: #dc2626;
+}
+.loader {
+    border-top-color: #3b82f6;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
